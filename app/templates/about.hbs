@@ -2,4 +2,12 @@
 
 <p>The Super Rentals website was created to explore the wonderful world of Ember.js. This project allows us to imagine traveling the world while simultaneously traversing the pathways of the Ember framework!</p>
 
+<ul>
+  {{#each model as |announcement|}}
+    <li> {{announcement.title}} </li>
+    <li> {{announcement.message}} </li>
+  {{/each}}
+</ul>
+
+
 {{#link-to 'contact'}}Contact us{{/link-to}}
